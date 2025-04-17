@@ -1,57 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Apoorv Srivastava - Full Stack Developer Portfolio showcasing projects and achievements">
+    <meta name="keywords" content="Apoorv Srivastava, Web Developer, Full Stack Developer, Portfolio, Projects">
+    <meta property="og:title" content="Apoorv Srivastava - Portfolio">
+    <meta property="og:description" content="Full Stack Developer Portfolio showcasing projects and achievements">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apoorv Srivastava - Portfolio">
+    <meta name="twitter:description" content="Full Stack Developer Portfolio showcasing projects and achievements">
+    <title>Apoorv Srivastava - Portfolio</title>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="icon" href="https://app.trickle.so/storage/app/About Me.jpg">
 </head>
+
 <body>
-    <div class="container">
-        <h2>Student Registeration Form</h2>
-        <form>
-            <label for="firstname">Firstname</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Projects.js"></script>
+    <script type="text/babel" src="components/Certificates.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="app.js"></script>
 
-            <label for="middlename">Middlename</label>
-            <input type="text" id="middlename" name="middlename" placeholder="Middlename">
 
-            <label for="lastname">Lastname</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
-
-            <label for="course">Course</label>
-            <select id="course" name="course">
-                <option value="course1">Course 1</option>
-                <option value="course2">Course 2</option>
-                <option value="course3">Course 3</option>
-            </select>
-
-            <label>Gender</label>
-            <div class="gender">
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </div>
-
-            <label for="phone">Phone</label>
-            <div class="phone-input">
-                <span>+91</span>
-                <input type="tel" id="phone" name="phone" placeholder="phone no." required>
-            </div>
-
-            <label for="address">Current Address</label>
-            <textarea id="address" name="address" placeholder="Current Address"></textarea>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email">
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
 </body>
+
 </html>
-
-
